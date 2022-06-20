@@ -1,2 +1,2 @@
-# WordPress 💩 🤢  🥵
-# but it's cheap
+# Crypto Site 💩 💩 💩 💩 💩 / ★★★★★
+## Jesus, why WordPress?
