@@ -21,10 +21,8 @@ li.woocommerce-MyAccount-navigation-link a{
     color: #404040;
     background-color: #ebebeb;
     transition: linear all .2s;
-    text-indent: 0;
 }
 li.woocommerce-MyAccount-navigation-link a:hover{
     background-color: #e1e1e1;
-    text-shadow: 1px 1px 1px grey;
-    text-indent: 2px;
+    /*text-shadow: 1px 1px 1px grey;*/
 }
