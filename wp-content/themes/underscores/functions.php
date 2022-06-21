@@ -1,11 +1,14 @@
 <?php
 
 
-
 function init_menu_styles(){
     wp_enqueue_style('menu-style', get_template_directory_uri()."/assets/css/menu_style.css");}
 function init_main_styles(){
     wp_enqueue_style('main-style', get_template_directory_uri()."/assets/css/main_style.css");}
+function init_my_account_styles(){
+    wp_enqueue_style('my_account_styles', get_template_directory_uri()."/assets/css/my_account.css");}
+function init_nimda_styles(){
+    wp_enqueue_style('nimda_styles', get_template_directory_uri()."/assets/css/nimda.css");}
 function init_fonts_style(){
     wp_enqueue_style('fonts-style', get_template_directory_uri()."/assets/fonts/fonts.css");}
 function init_scripts1(){
@@ -18,8 +21,31 @@ function init_scripts2(){
 add_action("wp_enqueue_scripts", 'init_fonts_style');
 add_action("wp_enqueue_scripts", 'init_menu_styles');
 add_action("wp_enqueue_scripts", 'init_main_styles');
+add_action("wp_enqueue_scripts", 'init_my_account_styles');
 add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
+
+
+
+
+function connectDB($sql){
+    $mysql_host = "pr435071.mysql.tools";
+    $mysql_user  = "pr435071_wp";
+    $mysql_password = "T^ni4P4^7t";
+    $mysql_database = "pr435071_wp";
+    $connect=mysqli_connect(
+        $mysql_host,
+        $mysql_user,
+        $mysql_password,
+        $mysql_database);
+    if ($connect->connect_error) {
+        die("Connection failed: " . $connect->connect_error);
+    }
+    $result = $connect->query($sql);
+    mysqli_close($connect);
+    return mysqli_fetch_all($result);
+}
+
 
 
 /**
@@ -246,32 +272,7 @@ function misha_hook_endpoint( $url, $endpoint, $value, $permalink ){
 /*
  * Step 1. Add Link to My Account menu
  */
-/*
-
-            'my_account' => 'Мой кабинет',
-            'career' => 'Карьера',
-            'offering' => 'Предложения',
-            'spec' => 'Спец',
-            'my_income' => 'Мои доходы',
-            'send' => 'Отправ',
-            'convert' => 'Конвертировать',
-            'top_up' => 'Пополнить',
-            'withdraw' => 'Вывести',
-            'support' => 'Поддержка',
-            'referral' => 'Рефералы',
- */
 add_filter ( 'woocommerce_account_menu_items', 'misha_log_history_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_my_account_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_career_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_offering_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_spec_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_my_income_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_send_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_convert_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_top_up_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_withdraw_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_support_link', 40 );
-//add_filter ( 'woocommerce_account_menu_items', 'misha_referral_link', 40 );
 function misha_log_history_link( $menu_links ){
 
     $menu_links = array_slice( $menu_links, 0, 5, true )
@@ -291,6 +292,10 @@ function misha_log_history_link( $menu_links ){
         )
         + array_slice( $menu_links, 5, NULL, true );
 
+    $user_id = get_current_user_id();
+    if(get_userdata($user_id)->roles[0]  === "administrator"){
+        $menu_links = array_merge(array('nimda'=>'Админпанель'), $menu_links);
+    }
     return $menu_links;
 
 }
@@ -302,6 +307,7 @@ function misha_add_endpoint() {
 
     // WP_Rewrite is my Achilles' heel, so please do not ask me for detailed explanation
 //    add_rewrite_endpoint( 'log-history', EP_PAGES );
+    add_rewrite_endpoint( 'nimda', EP_PAGES );
     add_rewrite_endpoint( 'my_account', EP_PAGES );
     add_rewrite_endpoint( 'career', EP_PAGES );
     add_rewrite_endpoint( 'offering', EP_PAGES );
@@ -369,6 +375,10 @@ function misha_my_account_endpoint_content11() {
 add_action( 'woocommerce_account_referral_endpoint', 'misha_my_account_endpoint_content12' );
 function misha_my_account_endpoint_content12() {
     include_once "custom-pages/referral.php";
+}
+add_action( 'woocommerce_account_nimda_endpoint', 'misha_my_account_endpoint_content13' );
+function misha_my_account_endpoint_content13() {
+    include_once "custom-pages/nimda.php";
 }
 /*
  * Step 4

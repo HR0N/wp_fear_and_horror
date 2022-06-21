@@ -1,0 +1,15 @@
+.my_account{
+
+}
+.wallets{
+    display: inline-grid;
+    grid-auto-flow: column;
+    column-gap: 4px;
+}
+.wallets__wallet{
+    width: auto;
+    background-color: whitesmoke;
+    border-radius: .25rem;
+    padding: 3px 8px;
+    cursor: pointer;
+}

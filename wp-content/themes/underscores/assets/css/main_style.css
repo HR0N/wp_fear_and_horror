@@ -1,5 +1,10 @@
 .site-main{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 0 6px;
 }
+.woocommerce-account .woocommerce-MyAccount-navigation{width: 20%;}
+.woocommerce-account .woocommerce-MyAccount-content{width: 75%;}
 nav.woocommerce-MyAccount-navigation{
 }
 nav.woocommerce-MyAccount-navigation ul{
