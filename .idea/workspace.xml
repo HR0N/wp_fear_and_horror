@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4bb48a-c3f1-4622-8510-a458ba314e54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/career.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/convert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/my_income.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/offering.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/referral.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/send.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/spec.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/support.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/top_up.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/withdraw.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/nimda.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/php/h_get_bills.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/class_father.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/class_father.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/career.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/career.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/convert.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/convert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_income.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_income.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/nimda.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/nimda.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/nimda.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/nimda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/offering.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/offering.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/referral.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/referral.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/spec.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/spec.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/support.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/support.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/top_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/top_up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/withdraw.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/withdraw.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +62,7 @@
       <workItem from="1655808959228" duration="11652000" />
       <workItem from="1655822278162" duration="2014000" />
       <workItem from="1655831916805" duration="64000" />
-      <workItem from="1655885525978" duration="19386000" />
+      <workItem from="1655885525978" duration="21597000" />
     </task>
     <servers />
   </component>

@@ -35,6 +35,7 @@ echo var_dump($_GET);
 echo '</pre>';
 ?>
 <div class='nimda'>
+    <div class="data" data-bills='<?= json_encode($users_bill); ?>'></div>
     <h2>Admin panel</h2>
     <hr>
     <label>Выбор пользователя<br/>

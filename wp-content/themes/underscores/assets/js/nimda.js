@@ -5,10 +5,12 @@
                 super($, elem);
                 this.elem = $(elem);
                 this.select_user = this.find('.select-user');
+                this.data = $('div.data').data('bills');
                 this.events();
             }
 
             events(){
+                console.log(this.data);
                 this.select_user.on('change', (e)=>{console.log($(e.target).val());});
             };
         }

@@ -370,6 +370,8 @@ function misha_add_endpoint() {
     add_rewrite_endpoint( 'withdraw', EP_PAGES );
     add_rewrite_endpoint( 'support', EP_PAGES );
     add_rewrite_endpoint( 'referral', EP_PAGES );
+    // todo:                                                       . . : : php : : . .
+    add_rewrite_endpoint( 'h_get_bills', EP_PAGES );
 }
 /*
  * Step 3. Content for the new page in My Account, woocommerce_account_{ENDPOINT NAME}_endpoint
@@ -429,6 +431,11 @@ function misha_my_account_endpoint_content12() {
 add_action( 'woocommerce_account_nimda_endpoint', 'misha_my_account_endpoint_content13' );
 function misha_my_account_endpoint_content13() {
     include_once "custom-pages/nimda.php";
+}
+// todo:                                                       . . : : php : : . .
+add_action( 'woocommerce_account_nimda_endpoint', 'h_get_bills' );
+function h_get_bills() {
+    include_once "assets/php/h_get_bills.php";
 }
 // todo:                                                       . . : : extra fields : : . .
 function woocom_extra_register_fields() {?>
