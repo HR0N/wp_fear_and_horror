@@ -1,2 +1,5 @@
+<div class='referral'>
+    <h2>Рефералы</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>referral</h1>';

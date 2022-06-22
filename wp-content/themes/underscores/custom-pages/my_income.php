@@ -1,2 +1,5 @@
+<div class='Income'>
+    <h2>Мои доходы</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>my_income</h1>';

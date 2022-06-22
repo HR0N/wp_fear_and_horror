@@ -1,2 +1,5 @@
+<div class='send'>
+    <h2>Переводы</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>send</h1>';

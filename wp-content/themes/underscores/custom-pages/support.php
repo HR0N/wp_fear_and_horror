@@ -1,2 +1,5 @@
+<div class='support'>
+    <h2>Поддержка</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>support</h1>';

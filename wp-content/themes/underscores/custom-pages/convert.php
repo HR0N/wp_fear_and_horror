@@ -1,2 +1,5 @@
+<div class='convert'>
+    <h2>Конвертация</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>convert</h1>';

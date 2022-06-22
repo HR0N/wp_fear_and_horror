@@ -5,45 +5,97 @@ function init_menu_styles(){
     wp_enqueue_style('menu-style', get_template_directory_uri()."/assets/css/menu_style.css");}
 function init_main_styles(){
     wp_enqueue_style('main-style', get_template_directory_uri()."/assets/css/main_style.css");}
-function init_my_account_styles(){
-    wp_enqueue_style('my_account_styles', get_template_directory_uri()."/assets/css/my_account.css");}
-function init_nimda_styles(){
-    wp_enqueue_style('nimda_styles', get_template_directory_uri()."/assets/css/nimda.css");}
 function init_fonts_style(){
     wp_enqueue_style('fonts-style', get_template_directory_uri()."/assets/fonts/fonts.css");}
+function init_h_bootstrap_styles(){
+    wp_enqueue_style('h-bootstrap-style', get_template_directory_uri()."/assets/libs/h-boobstrap.css");}
+
+function init_career_styles(){
+    wp_enqueue_style('career-style', get_template_directory_uri()."/assets/css/career.css");}
+function init_convert_styles(){
+    wp_enqueue_style('convert-style', get_template_directory_uri()."/assets/css/convert.css");}
+function init_my_account_styles(){
+    wp_enqueue_style('my_account-style', get_template_directory_uri()."/assets/css/my_account.css");}
+function init_my_income_styles(){
+    wp_enqueue_style('my_income-style', get_template_directory_uri()."/assets/css/my_income.css");}
+function init_nimda_styles(){
+    wp_enqueue_style('nimda-style', get_template_directory_uri()."/assets/css/nimda.css");}
+function init_offering_styles(){
+    wp_enqueue_style('offering-style', get_template_directory_uri()."/assets/css/offering.css");}
+function init_referral_styles(){
+    wp_enqueue_style('referral-style', get_template_directory_uri()."/assets/css/referral.css");}
+function init_send_styles(){
+    wp_enqueue_style('send-style', get_template_directory_uri()."/assets/css/send.css");}
+function init_spec_styles(){
+    wp_enqueue_style('spec-style', get_template_directory_uri()."/assets/css/spec.css");}
+function init_support_styles(){
+    wp_enqueue_style('support-style', get_template_directory_uri()."/assets/css/support.css");}
+function init_top_up_styles(){
+    wp_enqueue_style('top_up-style', get_template_directory_uri()."/assets/css/top_up.css");}
+function init_withdraw_styles(){
+    wp_enqueue_style('withdraw-style', get_template_directory_uri()."/assets/css/withdraw.css");}
+
 function init_scripts1(){
     wp_enqueue_script('menu-script__class-father', get_template_directory_uri()."/assets/js/class_father.js");
 }
 function init_scripts2(){
     wp_enqueue_script('menu-script__menu', get_template_directory_uri()."/assets/js/menu.js");
 }
+function init_ajax_scripts(){
+    wp_enqueue_script('ajax_scripts', get_template_directory_uri()."/assets/js/ajax.js");
+}
+function init_nimda_scripts(){
+    wp_enqueue_script('nimda_scripts', get_template_directory_uri()."/assets/js/nimda.js");
+}
 
 add_action("wp_enqueue_scripts", 'init_fonts_style');
 add_action("wp_enqueue_scripts", 'init_menu_styles');
 add_action("wp_enqueue_scripts", 'init_main_styles');
+add_action("wp_enqueue_scripts", 'init_h_bootstrap_styles');
+
+add_action("wp_enqueue_scripts", 'init_career_styles');
+add_action("wp_enqueue_scripts", 'init_convert_styles');
 add_action("wp_enqueue_scripts", 'init_my_account_styles');
+add_action("wp_enqueue_scripts", 'init_my_income_styles');
+add_action("wp_enqueue_scripts", 'init_nimda_styles');
+add_action("wp_enqueue_scripts", 'init_offering_styles');
+add_action("wp_enqueue_scripts", 'init_referral_styles');
+add_action("wp_enqueue_scripts", 'init_send_styles');
+add_action("wp_enqueue_scripts", 'init_spec_styles');
+add_action("wp_enqueue_scripts", 'init_support_styles');
+add_action("wp_enqueue_scripts", 'init_top_up_styles');
+add_action("wp_enqueue_scripts", 'init_withdraw_styles');
+
 add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
+add_action("wp_footer", 'init_ajax_scripts');
+add_action("wp_footer", 'init_nimda_scripts');
 
 
 
-
+$mysql_host = "pr435071.mysql.tools";
+$mysql_user  = "pr435071_wp";
+$mysql_password = "T^ni4P4^7t";
+$mysql_database = "pr435071_wp";
+global $connect;
+$connect=mysqli_connect(
+    $mysql_host,
+    $mysql_user,
+    $mysql_password,
+    $mysql_database);
+if ($connect->connect_error) {
+    die("Connection failed: " . $connect->connect_error);
+}
 function connectDB($sql){
-    $mysql_host = "pr435071.mysql.tools";
-    $mysql_user  = "pr435071_wp";
-    $mysql_password = "T^ni4P4^7t";
-    $mysql_database = "pr435071_wp";
-    $connect=mysqli_connect(
-        $mysql_host,
-        $mysql_user,
-        $mysql_password,
-        $mysql_database);
-    if ($connect->connect_error) {
-        die("Connection failed: " . $connect->connect_error);
-    }
+    global $connect;
     $result = $connect->query($sql);
-    mysqli_close($connect);
     return mysqli_fetch_all($result);
+}
+function insertDB($sql){
+    global $connect;
+    $result = $connect->query($sql);
+//    mysqli_close($connect);
+    return $result;
 }
 
 
@@ -304,7 +356,6 @@ function misha_log_history_link( $menu_links ){
  */
 add_action( 'init', 'misha_add_endpoint' );
 function misha_add_endpoint() {
-
     // WP_Rewrite is my Achilles' heel, so please do not ask me for detailed explanation
 //    add_rewrite_endpoint( 'log-history', EP_PAGES );
     add_rewrite_endpoint( 'nimda', EP_PAGES );
@@ -319,7 +370,6 @@ function misha_add_endpoint() {
     add_rewrite_endpoint( 'withdraw', EP_PAGES );
     add_rewrite_endpoint( 'support', EP_PAGES );
     add_rewrite_endpoint( 'referral', EP_PAGES );
-
 }
 /*
  * Step 3. Content for the new page in My Account, woocommerce_account_{ENDPOINT NAME}_endpoint
@@ -380,6 +430,24 @@ add_action( 'woocommerce_account_nimda_endpoint', 'misha_my_account_endpoint_con
 function misha_my_account_endpoint_content13() {
     include_once "custom-pages/nimda.php";
 }
+// todo:                                                       . . : : extra fields : : . .
+function woocom_extra_register_fields() {?>
+    <p class="form-row form-row-wide">
+        <label for="reg_billing_first_name"><?php _e( "billing_phone", "woocommerce" ); ?>
+            <span class="required">*</span></label>
+        <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone"
+               value="<?php if ( ! empty( $_POST["billing_phone"] ) ) esc_attr_e( $_POST["billing_phone"] ); ?>"/></p>
+    <?php
+}
+function woocom_save_extra_register_fields($customer_id) {
+    if (isset($_POST["billing_phone"])) {
+        update_user_meta($customer_id, "billing_phone", sanitize_text_field($_POST["billing_phone"]));
+    }
+}
+
+add_action("woocommerce_created_customer", "woocom_save_extra_register_fields");
+
+add_action( "woocommerce_register_form_start", "woocom_extra_register_fields" );
 /*
  * Step 4
  */

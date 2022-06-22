@@ -1,2 +1,5 @@
+<div class='withdraw'>
+    <h2>Вывести</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>withdraw</h1>';

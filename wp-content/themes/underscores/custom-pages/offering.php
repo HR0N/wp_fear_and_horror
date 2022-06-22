@@ -1,2 +1,5 @@
+<div class='offering'>
+    <h2>Предложения</h2>
+    <hr>
+</div>
 <?php
-    echo '<h1>offering</h1>';
