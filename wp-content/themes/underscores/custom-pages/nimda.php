@@ -1,19 +1,12 @@
 <?php
 $user_id = get_current_user_id();
 $admin = get_userdata($user_id)->roles[0] === 'administrator';
-
-$users = get_users();
-$users = array_map(function ($val){
-    return $val;
-}, $users);
-
 ?>
 <?php if($admin) :?>
 <?php
 global $res, $users_bill;
-$res = connectDB("SELECT * FROM `wp_users`");
+$users = connectDB("SELECT * FROM `wp_users`");
 $users_bill = connectDB("SELECT * FROM `wp_user_bills`");
-
 
 function getUserBill($user_id){
     global $users_bill;
@@ -27,23 +20,32 @@ function getUserBill($user_id){
 function createUserBill($user_id){
     insertDB("INSERT INTO `wp_user_bills`(`user`) VALUES (".$user_id.")");
 }
-echo '<pre>';
-echo var_dump(getUserBill(9));
-echo '</pre>';
-echo '<pre>';
-echo var_dump($_GET);
-echo '</pre>';
+foreach ($users as $user001){   /* Check bill for any user. Add if haven't*/
+        getUserBill($user001[0]);}
 ?>
 <div class='nimda'>
-    <div class="data" data-bills='<?= json_encode($users_bill); ?>'></div>
+    <div hidden class='data'
+         data-users='<?= json_encode($users); ?>'
+         data-bills='<?= json_encode($users_bill); ?>'
+    ></div>
     <h2>Admin panel</h2>
     <hr>
-    <label>Выбор пользователя<br/>
-        <select class="form-select select-user">
-            <option selected disabled>users</option>
-            <?php foreach ($res as $nickname)
-                echo "<option value='$nickname[0]'>$nickname[1]</option>";?>
-        </select>
-    </label>
+    <div class='grid'>
+        <div class='select-user'>
+            <label>Выбор пользователя<br/>
+                <select class='form-select select-user__select'>
+                    <option selected disabled> _ _ </option>
+                    <?php foreach ($res as $nickname)
+                        echo "<option value='$nickname[0]'>$nickname[1]</option>";?>
+                </select>
+            </label>
+        </div>
+        <div class='user-wallet'>
+            <div class='user-wallet__wallet'>
+                <label>Счет<input class='form-control' value='0' type='number'></label>
+            </div>
+            <div class='btn btn-outline-success change-bill'>Изменить</div>
+        </div>
+    </div>
 </div>
 <?php endif; ?>

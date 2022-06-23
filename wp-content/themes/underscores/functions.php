@@ -47,6 +47,9 @@ function init_ajax_scripts(){
 function init_nimda_scripts(){
     wp_enqueue_script('nimda_scripts', get_template_directory_uri()."/assets/js/nimda.js");
 }
+function init_jquery_scripts(){
+    wp_enqueue_script('jquery_scripts', get_template_directory_uri()."/assets/libs/jquery/jquery-3.6.0.slim.min.js");
+}
 
 add_action("wp_enqueue_scripts", 'init_fonts_style');
 add_action("wp_enqueue_scripts", 'init_menu_styles');
@@ -70,6 +73,7 @@ add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
 add_action("wp_footer", 'init_ajax_scripts');
 add_action("wp_footer", 'init_nimda_scripts');
+//add_action("wp_footer", 'init_jquery_scripts');
 
 
 
@@ -371,7 +375,7 @@ function misha_add_endpoint() {
     add_rewrite_endpoint( 'support', EP_PAGES );
     add_rewrite_endpoint( 'referral', EP_PAGES );
     // todo:                                                       . . : : php : : . .
-    add_rewrite_endpoint( 'h_get_bills', EP_PAGES );
+//    add_rewrite_endpoint( 'h_get_bills', EP_PAGES );
 }
 /*
  * Step 3. Content for the new page in My Account, woocommerce_account_{ENDPOINT NAME}_endpoint
@@ -433,10 +437,10 @@ function misha_my_account_endpoint_content13() {
     include_once "custom-pages/nimda.php";
 }
 // todo:                                                       . . : : php : : . .
-add_action( 'woocommerce_account_nimda_endpoint', 'h_get_bills' );
-function h_get_bills() {
-    include_once "assets/php/h_get_bills.php";
-}
+//add_action( 'woocommerce_account_nimda_endpoint', 'h_get_bills' );
+//function h_get_bills() {
+//    include_once "assets/php/h_get_bills.php";
+//}
 // todo:                                                       . . : : extra fields : : . .
 function woocom_extra_register_fields() {?>
     <p class="form-row form-row-wide">

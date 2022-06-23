@@ -1,3 +1,28 @@
 .nimda{
-
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.select-user{
+    width: 200px;
+    position: revert;
+}
+.user-wallet{
+    height: 38px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    column-gap: 15px;
+    align-items: end;
+}
+.user-wallet__wallet{
+    display: block;
+    cursor: pointer;
+}
+.user-wallet__wallet .btn{
+}
+.user-wallet__wallet input{
+    height: 38px;
 }

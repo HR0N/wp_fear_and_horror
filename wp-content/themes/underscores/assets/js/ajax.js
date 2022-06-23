@@ -1,11 +1,14 @@
 class Ajax {
+    constructor($) {
+        this.$ = $;
+    }
     get_data(url, callback){ /* используйте GET запрос в PHP*/
-        $.ajaxSetup({
+        this.$.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        $.ajax({
+        this.$.ajax({
             method: 'GET',
             url: url,
             cache: false,
@@ -18,12 +21,12 @@ class Ajax {
         });
     }
     get_data_param(url, param, callback){ /* используйте GET запрос в PHP*/
-        $.ajaxSetup({
+        this.$.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        $.ajax({
+        this.$.ajax({
             method: 'GET',
             data: {id: param},
             url: url,
@@ -38,13 +41,13 @@ class Ajax {
         });
     }
 
-    insert_data(request_type, url, data, callback){     /*todo: data - обязательно объект(не массив)*/
-        $.ajaxSetup({
+    insert_data(request_type, url, data, callback = ()=>{}){     /*todo: data - обязательно объект(не массив)*/
+        this.$.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        $.ajax({
+        this.$.ajax({
             type: request_type,
             url: url,
             data: {data},
