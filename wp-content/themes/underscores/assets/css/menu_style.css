@@ -17,8 +17,8 @@ body, html, *{
 }
 /*                                                                           project settings   [end]         */
 /*                                                                           body   [start]         */
-/*                                                                           menu-menu-1-container   [start]         */
-.menu-menu-1-container{
+/*                                                                           menu-nav-menu-container   [start]         */
+.menu-nav-menu-container{
     grid-area: header;
     background-color: whitesmoke;
     display: grid;
@@ -28,9 +28,9 @@ body, html, *{
     padding: 3px 10%;
     font-family: Roboto, Arial, serif;
 }
-/*                                                                 menu-menu-1-container nav-menu                   */
-/*                                                                 menu-menu-1-container nav-menu > main ul         */
-.menu-menu-1-container ul.nav-menu{
+/*                                                                 menu-nav-menu-container nav-menu                   */
+/*                                                                 menu-nav-menu-container nav-menu > main ul         */
+.menu-nav-menu-container ul.nav-menu{
     margin: 0;
     z-index: 2;
     list-style: none;
@@ -43,15 +43,15 @@ body, html, *{
     column-gap: 15px;
     box-sizing: border-box;
 }
-.menu-menu-1-container ul.nav-menu li{
+.menu-nav-menu-container ul.nav-menu li{
     align-self: center;
 }
-.menu-menu-1-container .navbar-brand{
+.menu-nav-menu-container .navbar-brand{
     width: 63px;
     height: 63px;
     position: relative;
 }
-.menu-menu-1-container .navbar-brand a{
+.menu-nav-menu-container .navbar-brand a{
     border: 1px solid white;
     border-radius: 50%;
     background-color: white;
@@ -61,18 +61,18 @@ body, html, *{
     width: 100%;
     top: -50%;
 }
-.menu-menu-1-container .navbar-brand img{
+.menu-nav-menu-container .navbar-brand img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
     opacity: .8;
     object-fit: cover;
 }
-.menu-menu-1-container ul.nav-menu .menu-item{
+.menu-nav-menu-container ul.nav-menu .menu-item{
     width: auto;
     position: relative;
 }
-.menu-menu-1-container ul.nav-menu .menu-item a{
+.menu-nav-menu-container ul.nav-menu .menu-item a{
     display: grid;
     height: 44px;
     box-sizing: border-box;
@@ -85,31 +85,31 @@ body, html, *{
     background-color: rgba(0, 0, 0, 0);
     transition: all linear .2s;
 }
-.menu-menu-1-container ul.nav-menu .menu-item .sub-menu{
+.menu-nav-menu-container ul.nav-menu .menu-item .sub-menu{
     width: auto;
     max-width: max-content;
     background-color: white;
     border: 1px solid lightgray;
 }
-.menu-menu-1-container ul.nav-menu .menu-item .sub-menu a{
+.menu-nav-menu-container ul.nav-menu .menu-item .sub-menu a{
     width: 100%;
     color: dimgray;
 }
-.menu-menu-1-container ul.nav-menu .menu-item .sub-menu > .menu-item:hover > a{color: dimgrey;
+.menu-nav-menu-container ul.nav-menu .menu-item .sub-menu > .menu-item:hover > a{color: dimgrey;
     background-color: lavender;}
-.menu-menu-1-container ul.nav-menu > .menu-item:hover > a{
+.menu-nav-menu-container ul.nav-menu > .menu-item:hover > a{
     border-bottom: 2px solid dimgray;
     color: dimgrey;
 }
-.menu-menu-1-container ul.nav-menu .menu-item a:active{
+.menu-nav-menu-container ul.nav-menu .menu-item a:active{
     background-color: rgba(0, 0, 0, 0.31);
 }
 /* nav-menu > sub ul     */
-.menu-menu-1-container ul.nav-menu .menu-item:hover > ul{
+.menu-nav-menu-container ul.nav-menu .menu-item:hover > ul{
     display: grid;
     animation: .3s linear show_submenu_width_delay;
 }
-.menu-menu-1-container ul.nav-menu .menu-item ul{
+.menu-nav-menu-container ul.nav-menu .menu-item ul{
     position: absolute;
     left: 0;
     margin: 0;
@@ -118,8 +118,8 @@ body, html, *{
     min-width: 100%;
     list-style: none;
 }
-.menu-menu-1-container ul.nav-menu .menu-item ul .menu-item{}
-.menu-menu-1-container ul.nav-menu .menu-item ul .menu-item a{
+.menu-nav-menu-container ul.nav-menu .menu-item ul .menu-item{}
+.menu-nav-menu-container ul.nav-menu .menu-item ul .menu-item a{
     white-space: nowrap;
     transition: .1s linear all;
 }
@@ -134,7 +134,7 @@ body, html, *{
         opacity: 1;
     }
 }
-.menu-menu-1-container ul.nav-menu .menu-item.menu-item-has-children a{
+.menu-nav-menu-container ul.nav-menu .menu-item.menu-item-has-children a{
     /*text-indent: -15px;*/
 }
 .short{
@@ -143,10 +143,10 @@ body, html, *{
     padding-right: 10px;
     white-space: nowrap;
 }
-.menu-menu-1-container .menu-item-has-children > a{
+.menu-nav-menu-container .menu-item-has-children > a{
     justify-content: center;
 }
-.menu-menu-1-container .menu-item-has-children > a span:after{
+.menu-nav-menu-container .menu-item-has-children > a span:after{
     content: '\23F7';
     position: absolute;
     right: -7px;
@@ -160,6 +160,9 @@ body, html, *{
     display: none;
     cursor: pointer;
 }
+.is-active a{
+    background-color: #c3ccdf !important;
+}
 @media screen and (max-width: 768px){
     .nav-bars button, .navbar-brand{display: none}
     .nav-bars button{
@@ -172,15 +175,15 @@ body, html, *{
     .nav-bars button.show{
         display: block;
     }
-    .menu-menu-1-container{min-height: 48px;}
-    .menu-menu-1-container ul.nav-menu{
+    .menu-nav-menu-container{min-height: 48px;}
+    .menu-nav-menu-container ul.nav-menu{
         position: relative;
         display: none;
         grid-auto-flow: row;
         grid-auto-columns: 1fr;
         height: 0;
     }
-    .menu-menu-1-container ul.nav-menu.show{
+    .menu-nav-menu-container ul.nav-menu.show{
         display: grid;
         height: auto;
     }
@@ -191,16 +194,16 @@ body, html, *{
         text-align: center;
     }
 }
-/*                                                                            menu-menu-1-container     [end]         */
+/*                                                                            menu-nav-menu-container     [end]         */
 
 @media screen and (min-width: 769px){
-    .menu-menu-1-container{
+    .menu-nav-menu-container{
         font-size: .8em;
     }
 }
 
 @media screen and (min-width: 1024px){
-    .menu-menu-1-container{
+    .menu-nav-menu-container{
         font-size: 1em;
     }
 }

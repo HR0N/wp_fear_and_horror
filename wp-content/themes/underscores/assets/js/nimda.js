@@ -28,7 +28,7 @@
             }
             change_bill(){
                 let type = 'GET',
-                    url = "https://wp.anakim.space/sql_update_bills",
+                    url = "https://wp.evilcode.space/do-not-delete-sql-update_bills/",
                     data = {user_id: this.current_user, value: $(this.current_bill_html).val()};
                 this.ajax.insert_data(type, url, data);
                 this.bills.map((v, k)=>{

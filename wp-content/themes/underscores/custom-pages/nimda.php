@@ -6,7 +6,7 @@ $admin = get_userdata($user_id)->roles[0] === 'administrator';
 <?php
 global $res, $users_bill;
 $users = connectDB("SELECT * FROM `wp_users`");
-$users_bill = connectDB("SELECT * FROM `wp_user_bills`");
+$users_bill = connectDB("SELECT * FROM `wp_users_bill`");
 
 function getUserBill($user_id){
     global $users_bill;
@@ -18,7 +18,7 @@ function getUserBill($user_id){
     return $result;
 }
 function createUserBill($user_id){
-    insertDB("INSERT INTO `wp_user_bills`(`user`) VALUES (".$user_id.")");
+    insertDB("INSERT INTO `wp_users_bill`(`user`) VALUES (".$user_id.")");
 }
 foreach ($users as $user001){   /* Check bill for any user. Add if haven't*/
         getUserBill($user001[0]);}
@@ -35,14 +35,12 @@ foreach ($users as $user001){   /* Check bill for any user. Add if haven't*/
             <label>Выбор пользователя<br/>
                 <select class='form-select select-user__select'>
                     <option selected disabled> _ _ </option>
-                    <?php foreach ($res as $nickname)
-                        echo "<option value='$nickname[0]'>$nickname[1]</option>";?>
                 </select>
             </label>
         </div>
         <div class='user-wallet'>
             <div class='user-wallet__wallet'>
-                <label>Счет<input class='form-control' value='0' type='number'></label>
+                <label>Счет ($)<input class='form-control' value='0' type='number'></label>
             </div>
             <div class='btn btn-outline-success change-bill'>Изменить</div>
         </div>

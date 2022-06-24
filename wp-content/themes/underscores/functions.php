@@ -73,7 +73,7 @@ add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
 add_action("wp_footer", 'init_ajax_scripts');
 add_action("wp_footer", 'init_nimda_scripts');
-//add_action("wp_footer", 'init_jquery_scripts');
+add_action("wp_footer", 'init_jquery_scripts');
 
 
 
@@ -463,3 +463,5 @@ add_action( "woocommerce_register_form_start", "woocom_extra_register_fields" );
  * Step 4
  */
 // Go to Settings > Permalinks and just push "Save Changes" button.
+
+// todo:                                                       . . : : global functions : : . .

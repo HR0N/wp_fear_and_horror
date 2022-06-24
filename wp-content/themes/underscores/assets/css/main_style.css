@@ -3,8 +3,18 @@
     margin: 0 auto;
     padding: 0 6px;
 }
-.woocommerce-account .woocommerce-MyAccount-navigation{width: 20%;}
-.woocommerce-account .woocommerce-MyAccount-content{width: 75%;}
+.entry-content .woocommerce{
+    display: grid;
+    grid-auto-flow: column;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation{
+    width: 260px;
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+    justify-self: center;
+    width: calc(100vw - 320px);
+    min-width: 300px;
+}
 nav.woocommerce-MyAccount-navigation{
 }
 nav.woocommerce-MyAccount-navigation ul{
