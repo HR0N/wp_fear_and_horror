@@ -5,10 +5,10 @@
                 super($, elem);
                 this.elem = $(elem);
                 this.select_user = this.find('.select-user__select');
-                this.users = $('div.data').data('users');
+                this.users = this.data.data('users');
                 this.current_user = null;
                 this.current_bill_html = this.find('.user-wallet__wallet input');
-                this.bills = $('div.data').data('bills');
+                this.bills = this.data.data('bills');
                 this.button_change_bill = this.find('.change-bill');
                 this.events();
             }

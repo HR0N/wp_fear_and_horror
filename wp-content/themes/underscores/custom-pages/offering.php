@@ -1,34 +1,4 @@
 <div class='offering'>
-    <div class="offer best-offers">
-        <div class="best-offers__header">
-            <h2>ЛУЧШИЕ МАРКЕТИНГОВЫЕ ПРЕДЛОЖЕНИЯ</h2>
-            <hr>
-        </div>
-        <div class="best-offers__main">
-            <div class="contract contract-1">
-                <div>Контракт №33123</div>
-                <div>Диапазон вклада: <span>1$-1099$</span></div>
-                <div>Диапазон начислений: <span>0,9%-1,2%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark">АКТИВНО</div></div>
-            </div>
-            <div class="contract contract-2">
-                <div>Контракт №33412</div>
-                <div>Диапазон вклада: <span>100$-9999$</span></div>
-                <div>Диапазон начислений: <span>1,2%-1,45%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark">ВЛОЖИТЬ</div></div>
-            </div>
-            <div class="contract contract-3">
-                <div>Контракт №331897</div>
-                <div>Диапазон вклада: <span>10000$++</span></div>
-                <div>Диапазон начислений: <span>1,8%-2,13%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark">ВЛОЖИТЬ</div></div>
-            </div>
-        </div>
-        <div class="best-offers__footer">
-            <div><span>*</span>Вклад: на неделю <span>*</span>Начисления процента: ежедневно </div>
-            <div><span>*</span>Есть возможность вклада на более длительные сроки: </div>
-        </div>
-    </div>
     <div class="offer unlimited-offers">
         <div class="unlimited-offers__header">
             <h2>БЕЗЛИМИТНЫЕ КОНТРАКТЫ</h2>

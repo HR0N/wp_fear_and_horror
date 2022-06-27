@@ -1,4 +1,46 @@
 <?php
+
+
+
+
+
+global $res, $users, $user_id, $users_bill, $cur_user;
+$user_id = get_current_user_id();
+$users = connectDB("SELECT * FROM `wp_users`");
+$users_bill = connectDB("SELECT * FROM `wp_users_bill`");
+array_map(function ($val){
+    global $cur_user;
+    if(get_current_user_id() == $val[0])
+        $cur_user = [$val[0], $val[3], curBill()];
+}, $users);
+
+
+foreach ($users as $user001){   /* Check bill for any user. Add if haven't*/
+    getUserBill($user001[0]);}
+global $res, $users_bill;
+$users = connectDB("SELECT * FROM `wp_users`");
+$users_bill = connectDB("SELECT * FROM `wp_users_bill`");
+function getUserBill($user_id){
+    global $users_bill;
+    $result = null;
+    foreach($users_bill as $bill){
+        if($bill[1] == $user_id){$result = $bill;}
+    }
+    if($result === null){createUserBill($user_id); $result = false;}
+    return $result;
+}
+function createUserBill($user_id){
+    insertDB("INSERT INTO `wp_users_bill`(`user`) VALUES (".$user_id.")");
+}
+function curBill(){
+    global $users_bill;
+    foreach ($users_bill as $bill){
+        if($bill[1] == get_current_user_id()){return $bill[2];}
+    }
+}
+
+
+
 /**
  * The template for displaying all pages
  *
@@ -16,7 +58,11 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
+        <div hidden class='data'
+             data-users='<?= json_encode($users); ?>'
+             data-bills='<?= json_encode($users_bill); ?>'
+             data-curuser='<?= json_encode($cur_user); ?>'
+        ></div>
 		<?php
 		while ( have_posts() ) :
 			the_post();

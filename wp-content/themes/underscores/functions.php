@@ -47,6 +47,12 @@ function init_ajax_scripts(){
 function init_nimda_scripts(){
     wp_enqueue_script('nimda_scripts', get_template_directory_uri()."/assets/js/nimda.js");
 }
+function init_my_account_scripts(){
+    wp_enqueue_script('my_account_scripts', get_template_directory_uri()."/assets/js/my_account.js");
+}
+function init_spec_scripts(){
+    wp_enqueue_script('spec_scripts', get_template_directory_uri()."/assets/js/spec.js");
+}
 function init_jquery_scripts(){
     wp_enqueue_script('jquery_scripts', get_template_directory_uri()."/assets/libs/jquery/jquery-3.6.0.slim.min.js");
 }
@@ -73,6 +79,8 @@ add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
 add_action("wp_footer", 'init_ajax_scripts');
 add_action("wp_footer", 'init_nimda_scripts');
+add_action("wp_footer", 'init_my_account_scripts');
+add_action("wp_footer", 'init_spec_scripts');
 add_action("wp_footer", 'init_jquery_scripts');
 
 
@@ -337,7 +345,7 @@ function misha_log_history_link( $menu_links ){
             'my_account' => 'Мой кабинет',
             'career' => 'Карьера',
             'offering' => 'Предложения',
-            'spec' => 'Спец',
+            'spec' => 'Спецпредложения',
             'my_income' => 'Мои доходы',
             'send' => 'Отправ',
             'convert' => 'Конвертировать',
