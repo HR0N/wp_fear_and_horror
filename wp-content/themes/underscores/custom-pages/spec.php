@@ -9,19 +9,25 @@
                 <div>Контракт №33123</div>
                 <div>Диапазон вклада: <span>1$-1099$</span></div>
                 <div>Диапазон начислений: <span>0,9%-1,2%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark open-modal">ВЛОЖИТЬ</div></div>
+                <div class="buttons">
+                    <div class="btn btn-outline-dark open-modal" data-id="1">ВЛОЖИТЬ</div>
+                </div>
             </div>
             <div class="contract contract-2">
                 <div>Контракт №33412</div>
                 <div>Диапазон вклада: <span>100$-9999$</span></div>
                 <div>Диапазон начислений: <span>1,2%-1,45%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark open-modal">ВЛОЖИТЬ</div></div>
+                <div class="buttons">
+                    <div class="btn btn-outline-dark open-modal" data-id="2">ВЛОЖИТЬ</div>
+                </div>
             </div>
             <div class="contract contract-3">
                 <div>Контракт №331897</div>
                 <div>Диапазон вклада: <span>10000$++</span></div>
                 <div>Диапазон начислений: <span>1,8%-2,13%</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark open-modal">ВЛОЖИТЬ</div></div>
+                <div class="buttons">
+                    <div class="btn btn-outline-dark open-modal" data-id="3">ВЛОЖИТЬ</div>
+                </div>
             </div>
             <div class="contract contract-4">
                 <div>Контракт №331897</div>
@@ -29,7 +35,9 @@
                 <div>Диапазон начислений: <span>1,8%-2,13%</span></div>
                 <div>Вложено: <span>100$</span></div>
                 <div><span>27.06.2022 - 04.07.2022</span></div>
-                <div class="buttons"><div class="btn btn-outline-dark open-modal">ВЛОЖИТЬ</div></div>
+                <div class="buttons">
+                    <div class="btn btn-outline-dark open-modal" data-id="4">ВЛОЖИТЬ</div>
+                </div>
             </div>
         </div>
         <div class="best-offers__footer">
@@ -39,8 +47,20 @@
     </div>
     <div class="modal">
         <div class="modal__main">
-
-            <div class="buttons"><div class="btn btn-outline-dark">Закрыть</div></div>
+            <div class="interface">
+                <label class="bill">Мой счет:<div class="bill__bill"></div></label>
+                <div class="deposit_amount"><label>Сумма вклада:
+                        <input class="form-control contract_amount" type="number" value="0"></label></div>
+                <div class="contract_info">
+                    <div><div>Диапазон вклада: </div><div class="deposit_diapason">?</div></div>
+                    <div><div>Диапазон начислений: </div><div class="income_diapason">?</div></div>
+                    <div><div>Срок контракта: </div><div class="time_space">?</div></div>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-outline-success deposit">Вложить</button>
+                    <button class="btn btn-outline-dark close">Закрыть</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -8,6 +8,7 @@ global $res, $users, $user_id, $users_bill, $cur_user;
 $user_id = get_current_user_id();
 $users = connectDB("SELECT * FROM `wp_users`");
 $users_bill = connectDB("SELECT * FROM `wp_users_bill`");
+$curcontracts = connectDB("SELECT * FROM `wp_user_contrcts` WHERE `user`=".$user_id);
 array_map(function ($val){
     global $cur_user;
     if(get_current_user_id() == $val[0])
@@ -62,6 +63,7 @@ get_header();
              data-users='<?= json_encode($users); ?>'
              data-bills='<?= json_encode($users_bill); ?>'
              data-curuser='<?= json_encode($cur_user); ?>'
+             data-curcontracts='<?= json_encode($curcontracts); ?>'
         ></div>
 		<?php
 		while ( have_posts() ) :
