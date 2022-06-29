@@ -1,6 +1,6 @@
 (function($){
     $(document).ready(()=>{
-        class SpecClass extends Class_Father{
+        class OfferingClass extends Class_Father{
             constructor(elem) {
                 super($, elem);
                 this.html_contracts = this.find('.contract');
@@ -25,13 +25,11 @@
                 let id = $(e.target).data('id');
                 this.cur_contract = id;
                 if($(e.target).attr('contractid')){this.cur_contract_ar = $(e.target).attr('contractid').split(',');}
-                let contract = this.contracts_info.spec[id];
+                let contract = this.contracts_info.offers[id];
                 let deposit_diapason = this.find('.deposit_diapason')
                     .html(`${contract.deposit_diapason[0]} - ${contract.deposit_diapason[1]} $`);
                 let income_diapason = this.find('.income_diapason')
-                    .html(`${contract.income_diapason[0]} - ${contract.income_diapason[1]} %/день`);
-                let time_space = this.find('.time_space')
-                    .html(this.sTime()[0]);
+                    .html(`${contract.income}% / день`);
                 this.cur_contracts.map((v, k)=>{
                     this.find('.interface2__bill_amount span').html(v[3]);
                     this.find('.interface2__bill_income span').html(v[4]);
@@ -45,7 +43,7 @@
                 this.cur_contracts.map((k, v)=>{
                     if(k[2] == this.cur_contract){exist = true}
                 });
-                let amount_diapason = this.contracts_info.spec[this.cur_contract].deposit_diapason;
+                let amount_diapason = this.contracts_info.offers[this.cur_contract].deposit_diapason;
                 if(!exist && this.cur_deposit_ammount >= amount_diapason[0]
                     && this.cur_deposit_ammount <= amount_diapason[1]){
                     let type = 'GET',
@@ -58,7 +56,7 @@
                             new_bill: new_bill};
                     this.ajax.insert_data(type, url, data);
                     console.log('%c' + ' ' + '"ok. i did it for you...' + ' ', 'background: #222; color: #bada55');
-                    setTimeout(()=>{location.reload();}, 300);
+                    setTimeout(()=>{location.reload();}, 300)
                 }else{
                     console.log('%c' + ' ' + 'contract with this id already exists.' + ' ',
                         'background: #222; color: #ffa3af');
@@ -76,7 +74,7 @@
                         contract_id: this.cur_contract_ar[0],
                         new_bill: new_bill};
                 this.ajax.insert_data(type, url, data);
-                setTimeout(()=>{location.reload();}, 300);
+                setTimeout(()=>{location.reload();}, 300)
             }
             check_existing_contracts(){
                 this.html_contracts.map((k, v)=>{
@@ -87,7 +85,6 @@
                             $(v).find('.open-modal').attr('contractid', k2);
                             $(v).find('.contract__ifActive.amount span').html(k2[3] + '$');
                             $(v).find('.contract__ifActive.income span').html(k2[4]);
-                            $(v).find('.contract__ifActive.date span').html(this.unix_to_time(k2[5]));
                         }
                     });
                 });
@@ -119,6 +116,6 @@
                 });
             }
         }
-        let my_account = new SpecClass('.spec');
+        let my_account = new OfferingClass('.offering');
     });
 })(jQuery);

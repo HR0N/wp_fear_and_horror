@@ -1,4 +1,4 @@
-.offering, .spec{
+.offering, .offers-wrapper{
     display: grid;
     grid-template-rows: repeat(2, auto);
     row-gap: 30px;
@@ -33,6 +33,11 @@
     min-width: 284px;
     max-width: 320px;
 }
+.contract__ifActive{display: none}
+.contract-active{
+    box-shadow: 0 0 22px cornflowerblue;
+}
+.contract-active .contract__ifActive{display: block}
 .contract .btn{
     width: 120px;
     margin: 0 auto;
@@ -44,7 +49,7 @@
 .best-offers__footer span, .unlimited-offers__footer span{
     color: red;
 }
-.spec .modal{
+.offers-wrapper .modal{
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -54,7 +59,7 @@
     background-color: rgba(17, 17, 17, 0.8);
     display: none;
 }
-.spec .modal .modal__main{
+.offers-wrapper .modal .modal__main{
     position: relative;
     width: 90%;
     min-width: 300px;
@@ -66,13 +71,13 @@
     border-radius: .25rem;
     background-color: whitesmoke;
 }
-.spec .modal .buttons{
+.offers-wrapper .modal .buttons{
     margin-top: 30px;
     display: grid;
     grid-template: min-content / auto auto;
     justify-content: space-between;
 }
-.spec .modal.active{
+.offers-wrapper .modal.active{
     display: block;
     animation: open_modal .4s;
 }
@@ -81,19 +86,28 @@
     justify-content: center;
     align-items: center;
 }
-.modal__main .interface{
-    position: revert;
-    display: inline-grid;
+.interface{
+    display: none;
+    padding: 2px;
+    box-shadow: 0 0 3px lightgrey;
+}
+.interface2 .interface2__bill{
+    background-color: rgba(100, 149, 237, 0.1);
+    min-width: 200px;
+}
+.interface2 .interface2__bill div:nth-child(odd){
+
+}
+.modal__main .interface1{
+    display: none;
     grid-template:
             [start] "label deposit_amount" min-content [row2]
             [row2] "contract_info contract_info" min-content [row3]
             [row3] "buttons buttons" 80px [row-end] / auto 1fr;
     row-gap: 2%;
     column-gap: 2%;
-    padding: 2px;
-    box-shadow: 0 0 3px lightgrey;
 }
-.modal__main .interface label{
+.modal__main .interface1 label{
     /*display: inline-grid;*/
     grid-template: fit-content(200px) / auto;
     /*background-color: rgba(154, 205, 50, 0.2);*/
@@ -101,9 +115,9 @@
     border-radius: .25rem;
     padding: 2px 4px;
 }
-.modal__main  .interface.bill{
+.modal__main  .interface1.bill{
 }
-.modal__main .interface .contract_info{
+.modal__main .interface1 .contract_info{
     /*display: inline-grid;*/
     grid-template: repeat(3, 1fr) / repeat(1, 1fr);
     align-content: center;
@@ -120,18 +134,18 @@
 .contract_info div div:nth-child(2){
     text-align: right;
 }
-.modal__main .interface .bill{
+.modal__main .interface1 .bill{
     background-color: rgba(100, 149, 237, 0.1);
     grid-area: label;
 }
-.modal__main .interface .deposit_amount{
+.modal__main .interface1 .deposit_amount{
     background-color: rgba(100, 149, 237, 0.1);
     grid-area: deposit_amount;
 }
-.modal__main .interface .contract_info{
+.modal__main .interface1 .contract_info{
     grid-area: contract_info;
 }
-.modal__main .interface .buttons{
+.modal__main .interface1 .buttons{
     grid-area: buttons;
 }
 @keyframes open_modal {

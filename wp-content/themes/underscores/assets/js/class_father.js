@@ -10,11 +10,11 @@ class Class_Father {
                 2:{deposit_diapason: [100, 9999], income_diapason: [1.2, 1.45]},
                 3:{deposit_diapason: [10000, 9999999], income_diapason: [1.8, 2.13]}},
             offers: {
-                1:{deposit_diapason: [1, 99], income: .5},
-                2:{deposit_diapason: [100, 499], income: .7},
-                3:{deposit_diapason: [500, 999], income: .9},
-                4:{deposit_diapason: [1000, 4999], income: 1.1},
-                5:{deposit_diapason: [5000, 9999999], income: 1.3}}
+                11:{deposit_diapason: [1, 99], income: .5},
+                12:{deposit_diapason: [100, 499], income: .7},
+                13:{deposit_diapason: [500, 999], income: .9},
+                14:{deposit_diapason: [1000, 4999], income: 1.1},
+                15:{deposit_diapason: [5000, 9999999], income: 1.3}}
         };
         this.state = {};
         this.ajax = new Ajax($);
@@ -34,6 +34,15 @@ class Class_Father {
         let start = `${ZNI(d)}.${ZNI(m)}.${ZNI(y)}`;
         let end = `${ZNI(dl)}.${ZNI(ml)}.${ZNI(yl)}`;
         return([`${start} - ${end}`, last.getTime()]);
+    }
+    unix_to_time(val){
+        let ZNI = v => {if(v < 10){return '0'+v}else return v};
+        let unix = parseInt(val);
+        let date = new Date(unix);
+        let d = date.getDate();
+        let m = date.getMonth() + 1;
+        let y = date.getFullYear();
+        return `${ZNI(d)}.${ZNI(m)}.${ZNI(y)}`;
     }
     find(selector){
         return this.elem.find(selector);
