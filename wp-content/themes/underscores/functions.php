@@ -56,6 +56,12 @@ function init_spec_scripts(){
 function init_offering_scripts(){
     wp_enqueue_script('offering_scripts', get_template_directory_uri()."/assets/js/offering.js");
 }
+function init_top_up_scripts(){
+    wp_enqueue_script('top_up_scripts', get_template_directory_uri()."/assets/js/top_up.js");
+}
+function init_withdraw_scripts(){
+    wp_enqueue_script('withdraw_scripts', get_template_directory_uri()."/assets/js/withdraw.js");
+}
 function init_jquery_scripts(){
     wp_enqueue_script('jquery_scripts', get_template_directory_uri()."/assets/libs/jquery/jquery-3.6.0.slim.min.js");
 }
@@ -85,6 +91,8 @@ add_action("wp_footer", 'init_nimda_scripts');
 add_action("wp_footer", 'init_my_account_scripts');
 add_action("wp_footer", 'init_spec_scripts');
 add_action("wp_footer", 'init_offering_scripts');
+add_action("wp_footer", 'init_top_up_scripts');
+add_action("wp_footer", 'init_withdraw_scripts');
 add_action("wp_footer", 'init_jquery_scripts');
 
 
@@ -351,7 +359,7 @@ function misha_log_history_link( $menu_links ){
             'offering' => 'Предложения',
             'spec' => 'Спецпредложения',
             'my_income' => 'Мои доходы',
-            'send' => 'Отправ',
+            'send' => 'Отправка',
             'convert' => 'Конвертировать',
             'top_up' => 'Пополнить',
             'withdraw' => 'Вывести',

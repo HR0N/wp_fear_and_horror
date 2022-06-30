@@ -1,0 +1,13 @@
+.withdraw{
+
+}
+.withdraw__main{
+    display: grid;
+    grid-template: repeat(4, 1fr) / fit-content(400px);
+    row-gap: 20px;
+}
+.withdraw__main_buttons{
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}

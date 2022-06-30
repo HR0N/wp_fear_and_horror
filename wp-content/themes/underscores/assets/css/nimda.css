@@ -4,6 +4,7 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
 }
 .select-user{
     width: 200px;
@@ -25,4 +26,31 @@
 }
 .user-wallet__wallet input{
     height: 38px;
+}
+.grid2{
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+}
+.payment-requests{
+    display: grid;
+    max-width: 800px;
+}
+.payment-requests__top-up, .payment-requests__withdraw{
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 15px;
+}
+.payment-requests__top-up{
+    margin-bottom: 50px;}
+.payment-requests__top-up_request, .payment-requests__withdraw_request{
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3px;
+    border-radius: .25rem;
+    grid-template: 1fr / 120px 1fr fit-content(100px) fit-content(120px);
+    column-gap: 2%;
+}
+.payment-requests__top-up_request:nth-child(odd), .payment-requests__withdraw_request:nth-child(odd){
+    background-color: #e1e1e1
 }

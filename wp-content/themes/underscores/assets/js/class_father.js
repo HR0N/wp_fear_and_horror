@@ -2,7 +2,10 @@ class Class_Father {
     constructor($, elem) {
         this.elem = $(elem);
         this.data = $(document).find('div.data');
+        this.all_users = this.data.data('users');
         this.cur_user = this.data.data('curuser');
+        this.topup_reqs = this.data.data('topupreqs') ? this.data.data('topupreqs') : false;
+        this.withdraw_reqs = this.data.data('withdraw') ? this.data.data('withdraw') : false;
         this.cur_contracts = this.data.data('curcontracts');
         this.contracts_info = {
             spec: {
@@ -46,5 +49,12 @@ class Class_Father {
     }
     find(selector){
         return this.elem.find(selector);
+    }
+    get_username(id){
+        let name = '';
+        this.all_users.map((v, k)=>{
+            if(parseInt(v[0]) === parseInt(id)){name = v[1]}
+        });
+        return name;
     }
 }
