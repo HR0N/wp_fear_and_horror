@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4bb48a-c3f1-4622-8510-a458ba314e54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/add_aside_icons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/twenty-twenty-two-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/twenty-twenty-two-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/menu_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/menu_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/models/contacts2.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/models/contacts2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/template-parts/content-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/template-parts/content-page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +80,7 @@
       <workItem from="1656676068299" duration="942000" />
       <workItem from="1656678698837" duration="80000" />
       <workItem from="1656921709573" duration="8260000" />
-      <workItem from="1657016840917" duration="13280000" />
+      <workItem from="1657016840917" duration="15244000" />
     </task>
     <servers />
   </component>
