@@ -1,5 +1,5 @@
 .site-main{
-    width: calc(100% - 30px);
+    width: calc(100%);
     margin: 0 auto;
     padding: 0 6px;
 }
@@ -8,20 +8,128 @@
     grid-auto-flow: column;
 }
 .woocommerce-account .woocommerce-MyAccount-navigation{
-    width: 260px;
+    display: grid;
+    justify-content: center;
 }
 .woocommerce-account .woocommerce-MyAccount-content{
     justify-self: center;
     width: calc(100vw - 320px);
     min-width: 300px;
 }
+.woocommerce-MyAccount-navigation{
+    padding-top: 55px;
+}
+.woocommerce-MyAccount-navigation ul{
+    position: relative;
+}
+.woocommerce-MyAccount-navigation ul:before{
+    content: url("./../images/aside_logo_big.png");
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    left: 0;
+    top: -55px;
+}
+.woocommerce-MyAccount-navigation ul li a{
+    padding-left: 8px;
+    align-content: center;
+}
+.woocommerce-MyAccount-navigation ul li a:after{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    left: 0;
+    top: 4px;
+    padding-right: 8px;
+    align-content: center;
+}
+.woocommerce-MyAccount-navigation ul li:nth-child(1) a:after{
+    content: url("./../images/aside_icons/ico1.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(1).is-active a:after{
+     content: url("./../images/aside_icons/ico1w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(1):hover a:after{
+     content: url("./../images/aside_icons/ico1w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(2) a:after{
+    content: url("./../images/aside_icons/ico2.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(2).is-active a:after{
+     content: url("./../images/aside_icons/ico2w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(2):hover a:after{
+     content: url("./../images/aside_icons/ico2w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(3) a:after{
+    content: url("./../images/aside_icons/ico3.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(3).is-active a:after{
+     content: url("./../images/aside_icons/ico3w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(3):hover a:after{
+     content: url("./../images/aside_icons/ico3w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(4) a:after{
+    content: url("./../images/aside_icons/ico4.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(4).is-active a:after{
+     content: url("./../images/aside_icons/ico4w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(4):hover a:after{
+     content: url("./../images/aside_icons/ico4w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(5) a:after{
+    content: url("./../images/aside_icons/ico5.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(5).is-active a:after{
+     content: url("./../images/aside_icons/ico5w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(5):hover a:after{
+     content: url("./../images/aside_icons/ico5w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(6) a:after{
+    content: url("./../images/aside_icons/ico6.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(6).is-active a:after{
+     content: url("./../images/aside_icons/ico6w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(6):hover a:after{
+     content: url("./../images/aside_icons/ico6w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(7) a:after{
+    content: url("./../images/aside_icons/ico7.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(7).is-active a:after{
+     content: url("./../images/aside_icons/ico7w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(7):hover a:after{
+     content: url("./../images/aside_icons/ico7w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(8) a:after{
+    content: url("./../images/aside_icons/ico8.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(8).is-active a:after{
+     content: url("./../images/aside_icons/ico8w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(8):hover a:after{
+     content: url("./../images/aside_icons/ico8w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(9) a:after{
+    content: url("./../images/aside_icons/ico9.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(9).is-active a:after{
+     content: url("./../images/aside_icons/ico9w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(9):hover a:after{
+     content: url("./../images/aside_icons/ico9w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(10) a:after{
+    content: url("./../images/aside_icons/ico10.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(10).is-active a:after{
+     content: url("./../images/aside_icons/ico10w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(10):hover a:after{
+     content: url("./../images/aside_icons/ico10w.png");
+ }
+.woocommerce-MyAccount-navigation ul li:nth-child(11) a:after{
+    content: url("./../images/aside_icons/ico11.png");
+}.woocommerce-MyAccount-navigation ul li:nth-child(11).is-active a:after{
+     content: url("./../images/aside_icons/ico11w.png");
+ }.woocommerce-MyAccount-navigation ul li:nth-child(11):hover a:after{
+     content: url("./../images/aside_icons/ico11w.png");
+ }
+
 nav.woocommerce-MyAccount-navigation{
 }
 nav.woocommerce-MyAccount-navigation ul{
     display: grid;
-    grid-template-columns: 150px;
-    grid-auto-rows: 30px;
-    row-gap: 2px;
+    grid-template-columns: 170px;
+    grid-auto-rows: 45px;
+    row-gap: 10px;
     list-style: none;
 }
 li.woocommerce-MyAccount-navigation-link{
@@ -33,11 +141,13 @@ li.woocommerce-MyAccount-navigation-link a{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #404040;
-    background-color: #ebebeb;
+    color: black;
+    background-color: white;
     transition: linear all .2s;
+    border: 1px solid black;
 }
 li.woocommerce-MyAccount-navigation-link a:hover{
-    background-color: #e1e1e1;
+    background-color: #005B80;
+    color: white;
     /*text-shadow: 1px 1px 1px grey;*/
 }

@@ -35,7 +35,9 @@ function init_top_up_styles(){
 function init_withdraw_styles(){
     wp_enqueue_style('withdraw-style', get_template_directory_uri()."/assets/css/withdraw.css");}
 
-function init_scripts1(){
+function init_scripts01(){
+    wp_enqueue_script('aside_menu_add_icons', get_template_directory_uri()."/assets/js/add_aside_icons.js");
+}function init_scripts1(){
     wp_enqueue_script('menu-script__class-father', get_template_directory_uri()."/assets/js/class_father.js");
 }
 function init_scripts2(){
@@ -84,6 +86,7 @@ add_action("wp_enqueue_scripts", 'init_support_styles');
 add_action("wp_enqueue_scripts", 'init_top_up_styles');
 add_action("wp_enqueue_scripts", 'init_withdraw_styles');
 
+add_action("wp_footer", 'init_scripts01');
 add_action("wp_footer", 'init_scripts1');
 add_action("wp_footer", 'init_scripts2');
 add_action("wp_footer", 'init_ajax_scripts');
@@ -356,15 +359,15 @@ function misha_log_history_link( $menu_links ){
 //            'log-history' => 'Log history',
             'my_account' => 'Мой кабинет',
             'career' => 'Карьера',
-            'offering' => 'Предложения',
-            'spec' => 'Спецпредложения',
+            'offering' => 'Контракты',
             'my_income' => 'Мои доходы',
             'send' => 'Отправка',
-            'convert' => 'Конвертировать',
+            'convert' => 'Конвертация',
             'top_up' => 'Пополнить',
             'withdraw' => 'Вывести',
             'support' => 'Поддержка',
             'referral' => 'Рефералы',
+            'spec' => 'Спецпредложения',
         )
         + array_slice( $menu_links, 5, NULL, true );
 

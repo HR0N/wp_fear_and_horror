@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <script src="https://use.fontawesome.com/d7f609ebcd.js"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -46,7 +47,11 @@
 		</div>--><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button>
+<!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">--><?php //esc_html_e( 'Primary Menu', 'underscores' ); ?><!--</button>-->
+            <div class="nav-bars">
+                <button class="button show"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <button class="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
 			<?php
 			wp_nav_menu(
 				array(

@@ -18,6 +18,9 @@ body, html, *{
 /*                                                                           project settings   [end]         */
 /*                                                                           body   [start]         */
 /*                                                                           menu-nav-menu-container   [start]         */
+.main-navigation{
+    position: relative;
+}
 .menu-nav-menu-container{
     grid-area: header;
     background-color: whitesmoke;
@@ -161,7 +164,9 @@ body, html, *{
     cursor: pointer;
 }
 .is-active a{
-    background-color: #c3ccdf !important;
+    background-color: #005B80 !important;
+    color: white !important;
+    box-shadow: 0 3px 3px lightgrey;
 }
 @media screen and (max-width: 768px){
     .nav-bars button, .navbar-brand{display: none}
@@ -192,6 +197,10 @@ body, html, *{
     }
     .menu-item a{
         text-align: center;
+        background-color: white !important;
+    }
+    .nav-menu{
+        margin-top: 50px !important;
     }
 }
 /*                                                                            menu-nav-menu-container     [end]         */

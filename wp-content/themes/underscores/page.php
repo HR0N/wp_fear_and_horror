@@ -68,7 +68,9 @@ get_header();
              data-curcontracts='<?= json_encode($curcontracts); ?>'
              data-topupreqs='<?= json_encode($topup_requests); ?>'
              data-withdraw='<?= json_encode($withdraw_requests); ?>'
-        ></div>
+        >
+            <span class="aside_ico1"><img src="./assets/images/aside_icons/ico1.png"></span>
+        </div>
 		<?php
 		while ( have_posts() ) :
 			the_post();
