@@ -161,6 +161,7 @@ li.woocommerce-MyAccount-navigation-link a:hover{
     }
     .woocommerce-MyAccount-navigation ul li a{
         color: transparent !important;
+        overflow: hidden;
     }
     .woocommerce-MyAccount-navigation ul li a:after{
         justify-content: center;

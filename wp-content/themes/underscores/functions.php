@@ -367,7 +367,7 @@ function misha_log_history_link( $menu_links ){
             'withdraw' => 'Вывести',
             'support' => 'Поддержка',
             'referral' => 'Рефералы',
-            'spec' => 'Спецпредложения',
+//            'spec' => 'Спецпредложения',
         )
         + array_slice( $menu_links, 5, NULL, true );
 
