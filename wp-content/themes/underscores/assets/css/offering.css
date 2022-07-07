@@ -1,13 +1,21 @@
 .offering, .offers-wrapper{
     display: grid;
-    grid-template-rows: repeat(2, auto);
-    row-gap: 30px;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+}
+.offers-wrapper h2{
+    border-bottom: 1px solid white;
+}
+.offers-wrapper h5{
+    color: white;
+    margin-bottom: 6px;
 }
 .offer{
     padding: 10px;
-    box-shadow: 2px 2px 5px grey;
-    border-radius: .25rem;
+    /*box-shadow: 2px 2px 5px grey;*/
+    /*border-radius: .25rem;*/
     height: fit-content;
+    border: 1px solid white;
 }
 .best-offers__main, .unlimited-offers__main{
     justify-items: center;
@@ -16,26 +24,41 @@
     column-gap: 12px;
     row-gap: 22px;
 }
-.best-offers__main{
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}
 .unlimited-offers__main{
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
 }
 .contract {
-    border: 2px solid dimgray;
-    padding: 6px 12px;
+    position: relative;
     display: inline-grid;
     row-gap: 10px;
     text-align: center;
-    min-width: 284px;
+    align-content: start;
+    min-width: 200px;
     max-width: 320px;
+    min-height: 250px;
+    background-color: white;
+    padding-bottom: 56px;
+}
+.contract .title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(0,58,104);
+    padding: 3px 0;
+    height: 36px;
 }
 .contract__ifActive{display: none}
 .contract-active{
-    box-shadow: 0 0 22px cornflowerblue;
+    box-shadow: 0 5px 10px #1f1f1f;
+}
+.offers-wrapper .contract-active .bbtn{
+    color: white;
+    background-color: rgb(0,58,104);
+}
+.offers-wrapper .contract-active .bbtn:hover{
+    color: white;
+    background-color: rgb(0, 40, 77);
 }
 .contract-active .contract__ifActive{display: block}
 .contract .btn{
@@ -148,7 +171,42 @@
 .modal__main .interface1 .buttons{
     grid-area: buttons;
 }
+.offers-wrapper .contract .buttons{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 6px;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+.offers-wrapper .bbtn{
+    color: black;
+    width: 130px;
+    height: 36px;
+    border-radius: 2rem;
+    border: 1px solid rgb(0,58,104);
+    padding: 5px;
+    cursor: pointer;
+}
+.offers-wrapper .bbtn:hover{
+    color: white;
+    background-color: rgb(0,58,104);
+}
+.best-offers .bold{
+    font-weight: bold;
+}
 @keyframes open_modal {
     0%{opacity: 0}
     100%{opacity: 1}
+}
+@media screen and (max-width: 2560px){
+    .best-offers{
+        display: grid;
+        max-width: 1290px;
+    }
+    .best-offers__main{
+        column-gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }

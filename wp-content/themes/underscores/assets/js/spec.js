@@ -107,8 +107,8 @@
                     this.interface1.css({display: 'none'});
                     this.interface2.css({display: 'none'});
                 });
-                this.find('.btn.deposit').on('click', this.deposit_contract.bind(this));
-                this.find('.btn.pull_off').on('click', this.pull_off_contract.bind(this));
+                this.find('.bbtn.deposit').on('click', this.deposit_contract.bind(this));
+                this.find('.bbtn.pull_off').on('click', this.pull_off_contract.bind(this));
             };
             render(){
                 this.contract_amount.on('change', (e)=>{

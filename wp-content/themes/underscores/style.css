@@ -479,7 +479,7 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	/*margin-bottom: 1.5em;*/
 }
 
 ul,
@@ -759,7 +759,8 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	/*padding: 1.5em 0 0;*/
+	/*margin: 1.5em 0 0;*/
 }
 
 .page-links {

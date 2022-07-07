@@ -360,14 +360,14 @@ function misha_log_history_link( $menu_links ){
             'my_account' => 'Мой кабинет',
             'career' => 'Карьера',
             'offering' => 'Контракты',
+            'spec' => 'Спец. Пред.',
             'my_income' => 'Мои доходы',
-            'send' => 'Отправка',
+            'send' => 'Отправить',
             'convert' => 'Конвертация',
             'top_up' => 'Пополнить',
             'withdraw' => 'Вывести',
             'support' => 'Поддержка',
             'referral' => 'Рефералы',
-//            'spec' => 'Спецпредложения',
         )
         + array_slice( $menu_links, 5, NULL, true );
 
