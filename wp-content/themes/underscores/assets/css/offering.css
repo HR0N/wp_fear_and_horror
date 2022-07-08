@@ -34,11 +34,14 @@
     row-gap: 10px;
     text-align: center;
     align-content: start;
-    min-width: 200px;
+    min-width: 217px;
     max-width: 320px;
-    min-height: 250px;
+    min-height: 264px;
     background-color: white;
-    padding-bottom: 56px;
+    padding-bottom: 65px;
+}
+.contract > div{
+    padding: 0 5px;
 }
 .contract .title{
     color: white;
@@ -175,7 +178,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 6px;
+    bottom: 12px;
     display: grid;
     justify-content: center;
     align-items: end;
@@ -203,10 +206,19 @@
 @media screen and (max-width: 2560px){
     .best-offers{
         display: grid;
-        max-width: 1290px;
+        /*max-width: 1000px;*/
+    }
+    .best-offers__header{
+        margin: 16px;
     }
     .best-offers__main{
-        column-gap: 50px;
+        column-gap: 15px;
+        padding: 0 0 58px 0;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+@media screen and (max-width: 769px){
+    .best-offers__main{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }

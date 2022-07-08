@@ -1,12 +1,29 @@
 .site-main{
     width: calc(100%);
     margin: 0 auto;
-    padding: 0 6px;
+    padding: 0 6px 0 2px;
 }
 .entry-content .woocommerce{
     display: grid;
-    grid-template: 1fr / 180px 1fr;
-    column-gap: 15px;
+}
+
+@media screen and (max-width: 2560px) {
+    .entry-content .woocommerce{
+        grid-template: 1fr / 320px 1fr;
+        column-gap: 15px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .entry-content .woocommerce{
+        grid-template: 1fr / 180px 1fr;
+        column-gap: 15px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .entry-content .woocommerce{
+        grid-template: 1fr / 45px 1fr;
+        column-gap: 15px;
+    }
 }
 .woocommerce-account .woocommerce-MyAccount-navigation{
     display: grid;
@@ -15,7 +32,7 @@
 .woocommerce-account .woocommerce-MyAccount-content{
     justify-self: center;
     width: 100%;
-    padding: 1.5rem 10px 0;
+    padding: 1.5rem 29px 0;
     min-width: 300px;
     background-image: url("./../images/big-data-analytics-banner 1.png"),
     linear-gradient(135.01deg, #005B80 18.3%, #003A68 85.56%);
@@ -162,10 +179,14 @@ li.woocommerce-MyAccount-navigation-link a:hover{
 }
 @media screen and (max-width: 426px){
     .woocommerce-MyAccount-navigation{
-        width: 57px !important;
+        width: 61px !important;
+        padding-top: calc(1.5rem + 40px);
+        /*padding-left: 2px;*/
+        /*padding-right: 2px;*/
     }
     nav.woocommerce-MyAccount-navigation ul{
         grid-template-columns: 45px;
+        row-gap: 4px;
     }
     .woocommerce-MyAccount-navigation ul li a{
         color: transparent !important;
@@ -181,6 +202,15 @@ li.woocommerce-MyAccount-navigation-link a:hover{
         width: 100%;
         height: 45px;
         left: -6px;
-        top: -65px;
+        top: -60px;
     }
+}
+
+.not_finish_banner{
+    margin-top: 23px;
+    width: 100%;
+    height: 560px;
+    background-image: url("../../assets/images/banner_not_finish.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

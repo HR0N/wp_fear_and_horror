@@ -3,7 +3,7 @@
     <hr>
     <div class="withdraw__main">
         <div class="withdraw__main_bill">
-            <label>На Вашем счету:
+            <label>Ваш баланс:
                 <div class="withdraw__main_bill-bill">?</div>
             </label>
         </div>
@@ -18,7 +18,7 @@
             </label>
         </div>
         <div class="withdraw__main_buttons">
-            <div class="btn btn-outline-dark btn-withdraw">Вывести</div>
+            <div class="bbtn">ВЫВЕСТИ</div>
         </div>
     </div>
 </div>

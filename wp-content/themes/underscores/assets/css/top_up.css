@@ -1,19 +1,79 @@
 .top_up{
 
 }
+.top_up label input{
+    height: 38px;
+    text-indent: 15px;
+}
+.top_up label input, .top_up select{
+    border-radius: 2rem;
+}
 .top_up__main{
+    margin-top: 50px;
     display: grid;
-    grid-template: repeat(4, 1fr) / fit-content(400px);
+    color: white;
+    grid-template: repeat(4, 1fr) / 100%;
     row-gap: 20px;
 }
+.top_up__main_enter-amount label, .top_up__main_choose-wallet label{
+    padding-left: 15px;
+    font-weight: bold;
+}
+label input, label select, .top_up__main_requisites{
+    margin-top: 6px;
+}
+.requisites-indent{
+    font-weight: bold;
+    text-indent: 15px;
+}
 .top_up__main_requisites{
-    background-color: rgba(100, 149, 237, 0.1);
-    height: fit-content;
-    border-radius: .25rem;
-    padding: 2px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 38px;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 .top_up__main_send-request{
     display: grid;
     justify-content: end;
     align-items: end;
 }
+.top_up .buttons{
+    height: 38px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    margin-top: 20px;
+}
+.top_up .buttons .bbtn{
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    font-weight: bold;
+    height: 38px;
+    width: 100%;
+    cursor: pointer;
+}
+.top_up .buttons .bbtn:hover{
+    background-color: rgb(0,58,104);
+    color: white;
+    box-shadow: 2px 2px 6px #1b1a1a;
+}
+.option_icon{
+    position: relative;
+    padding-left: 40px;
+}
+/*.option_icon:nth-child(1):before{*/
+/*    content: '';*/
+/*    background-image: url("../../assets/images/crypt_ico/bitcoin.png");*/
+/*    position: absolute;*/
+/*    height: 36px;*/
+/*    width: 36px;*/
+/*    left: 1px;*/
+/*    top: 1px;*/
+/*}*/

@@ -28,6 +28,6 @@
                 this.btn_send_request.on('click', this.send_request.bind(this));
             };
         }
-        let my_account = new TopUpClass('.top_up');
+        new TopUpClass('.top_up');
     });
 })(jQuery);

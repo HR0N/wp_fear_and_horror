@@ -1,13 +1,44 @@
 .withdraw{
 
 }
+.withdraw__main_your-requisites label, .withdraw__main_amount label{
+    padding-left: 15px;
+}
+.withdraw label input{
+    border-radius: 2rem;
+    height: 38px;
+    text-indent: 15px;
+}
 .withdraw__main{
+    margin-top: 50px;
     display: grid;
-    grid-template: repeat(4, 1fr) / fit-content(400px);
-    row-gap: 20px;
+    grid-template: repeat(4, 1fr) / 1fr;
+    row-gap: 23px;
+    color: white;
+    font-weight: bold;
 }
 .withdraw__main_buttons{
+    height: 38px;
     display: grid;
-    justify-content: end;
+    grid-template: 1fr / 1fr;
+    margin-top: 20px;
+    justify-content: center;
     align-items: end;
+}
+.withdraw__main_buttons .bbtn{
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2rem;
+    font-weight: bold;
+    height: 38px;
+    width: 100%;
+    cursor: pointer;
+}
+.withdraw__main_buttons .bbtn:hover{
+    background-color: rgb(0,58,104);
+    color: white;
+    box-shadow: 2px 2px 6px #1b1a1a;
 }

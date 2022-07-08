@@ -22,9 +22,11 @@
                 </select>
             </label>
         </div>
-        <div class="top_up__main_requisites">bc1q7rcgcyd27t4typq79vt7quh2vx7wmqx3vwlw5x</div>
+        <label class="requisites-indent">Реквизиты:
+            <div class="top_up__main_requisites">bc1q7rcgcyd27t4typq79vt7quh2vx7wmqx3vwlw5x</div>
+        </label>
         <div class="buttons top_up__main_send-request">
-            <div class="btn btn-outline-dark send_request">Отправить заявку</div>
+            <div class="bbtn">ОТПРАВИТЬ ЗАЯВКУ</div>
         </div>
     </div>
 </div>

@@ -1,5 +1,6 @@
-<div class='Income'>
-    <h2>Мои доходы</h2>
+<div class='income'>
+    <h2>МОИ ДОХОДЫ</h2>
     <hr>
+    <div class="not_finish_banner"></div>
 </div>
 <?php
