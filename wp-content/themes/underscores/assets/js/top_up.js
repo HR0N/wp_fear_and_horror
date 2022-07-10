@@ -5,7 +5,7 @@
                 super($, elem);
                 this.select_wallets = this.find('#wallets');
                 this.requisites = this.find('.top_up__main_requisites');
-                this.btn_send_request = this.find('.send_request');
+                this.btn_send_request = this.find('.top_up__main_send-request .bbtn');
 
                 this.events();
             }

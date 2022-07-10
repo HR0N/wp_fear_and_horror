@@ -35,6 +35,9 @@
     max-width: 100%;
     overflow: hidden;
 }
+@media screen and (max-width: 769px){
+    .wallets__wallet .row span{overflow-x: scroll}
+}
 .wallets__chart{
     position: relative;
     margin-top: 23px;

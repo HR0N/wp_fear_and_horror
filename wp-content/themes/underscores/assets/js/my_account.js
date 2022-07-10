@@ -6,6 +6,7 @@
                 this.elem = $(elem);
                 this.display_wallet = this.find('.wallets__wallet_amount');
                 this.link_html = this.find('.wallets__wallet_link');
+                this.my_link = this.find('.my_link');
                 this.events();
             }
             makeid(length) {
@@ -27,12 +28,18 @@
                 }
                 return hash;
             }
+            save_link_to_navigator(link){
+                console.log(link);
+                navigator.clipboard.writeText(link);
+            }
 
 
             events(){
                 let generate_link = Math.abs(this.hashCode(`example${this.cur_user[0]}`));
                 this.display_wallet.html(this.cur_user[2] +' USDT');
                 this.link_html.html(`${location.origin}/my_account/${generate_link}`);
+                this.my_link.on('click', this.save_link_to_navigator.bind(this, `${location.origin}/my_account/${generate_link}`))
+                this.my_link.on('touch', this.save_link_to_navigator.bind(this, `${location.origin}/my_account/${generate_link}`))
             };
         }
         let my_account = new MyAccountClass('.my_account');

@@ -10,7 +10,7 @@ $user_id = get_current_user_id();
     <div class='wallets'>
         <div class='wallets__wallet'>
             <div class="row my_bill"><span>Мой баланс: </span><span class="wallets__wallet_amount"></span></div>
-            <div class="row my_link"><span>Моя ссылка: </span><span class="wallets__wallet_link"></span></div>
+            <div class="row my_link"><span class="my_link">Моя ссылка: </span><span class="wallets__wallet_link"></span></div>
         </div>
         <div class="wallets__chart"></div>
         <div class="legends">

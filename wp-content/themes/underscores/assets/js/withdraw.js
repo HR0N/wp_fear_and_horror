@@ -4,7 +4,7 @@
             constructor(elem) {
                 super($, elem);
                 this.bill = this.find('.withdraw__main_bill-bill');
-                this.btn_withdraw = this.find('.btn-withdraw');
+                this.btn_withdraw = this.find('.withdraw__main_buttons .bbtn');
 
                 this.events();
             }
