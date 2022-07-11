@@ -18,7 +18,7 @@
             </div>
             <div class="contract contract-2">
                 <div class="title">Базовый</div>
-                <div class="bold">Диапазон: <span>100$-9999$</span></div>
+                <div class="bold">Диапазон: <span>1100$-9999$</span></div>
                 <div class="bold">Начисления: <span>1,2%-1,45%</span></div>
                 <div class="contract__ifActive amount">Вложено: <span>?</span></div>
                 <div class="contract__ifActive income">Начислено: <span>?</span></div>

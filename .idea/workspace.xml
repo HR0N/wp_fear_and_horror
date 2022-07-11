@@ -4,11 +4,10 @@
     <list default="true" id="ea4bb48a-c3f1-4622-8510-a458ba314e54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/my_account.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/my_account.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/my_account.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/my_account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/top_up.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/top_up.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/withdraw.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/withdraw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/my_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/offering.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/offering.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/top_up.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/top_up.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/class_father.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/class_father.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/offering.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/custom-pages/offering.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,8 @@
       <workItem from="1657186616202" duration="11883000" />
       <workItem from="1657279412311" duration="18992000" />
       <workItem from="1657306124659" duration="14000" />
-      <workItem from="1657466876959" duration="1150000" />
+      <workItem from="1657466876959" duration="2779000" />
+      <workItem from="1657474434493" duration="1773000" />
     </task>
     <servers />
   </component>

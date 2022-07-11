@@ -40,6 +40,12 @@
     background-size: cover;
     position: relative;
 }
+@media screen and (max-width: 320px){
+    .woocommerce-account .woocommerce-MyAccount-content{
+        padding: 1.5rem 6px 0;
+        min-width: 250px;
+    }
+}
 .woocommerce-account .woocommerce-MyAccount-content h2{
     color: white;
 }

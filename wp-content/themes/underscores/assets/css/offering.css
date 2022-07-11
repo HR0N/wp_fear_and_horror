@@ -39,6 +39,7 @@
     min-height: 264px;
     background-color: white;
     padding-bottom: 65px;
+    color: black;
 }
 .contract > div{
     padding: 0 5px;
@@ -206,6 +207,7 @@
 @media screen and (max-width: 2560px){
     .best-offers{
         display: grid;
+        max-width: 1186px;
         /*max-width: 1000px;*/
     }
     .best-offers__header{

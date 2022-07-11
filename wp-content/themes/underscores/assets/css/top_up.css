@@ -36,6 +36,17 @@ label input, label select, .top_up__main_requisites{
     border-radius: 2rem;
     overflow: hidden;
 }
+@media screen and (max-width: 768px){
+    .top_up__main_requisites{
+        overflow-x: scroll;
+        text-indent: 100px;
+    }
+}
+@media screen and (max-width: 465px){
+    .top_up__main_requisites{
+        text-indent: 165px;
+    }
+}
 .top_up__main_send-request{
     display: grid;
     justify-content: end;

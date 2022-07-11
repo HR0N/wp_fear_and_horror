@@ -10,7 +10,7 @@ class Class_Father {
         this.contracts_info = {
             spec: {
                 1:{deposit_diapason: [1, 1099], income_diapason: [.9, 1.2]},
-                2:{deposit_diapason: [100, 9999], income_diapason: [1.2, 1.45]},
+                2:{deposit_diapason: [1100, 9999], income_diapason: [1.2, 1.45]},
                 3:{deposit_diapason: [10000, 9999999], income_diapason: [1.8, 2.13]}},
             offers: {
                 11:{deposit_diapason: [1, 99], income: .5},
