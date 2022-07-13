@@ -40,6 +40,9 @@
     background-size: cover;
     position: relative;
 }
+.woocommerce-notices-wrapper{
+    display: none;
+}
 @media screen and (max-width: 320px){
     .woocommerce-account .woocommerce-MyAccount-content{
         padding: 1.5rem 6px 0;

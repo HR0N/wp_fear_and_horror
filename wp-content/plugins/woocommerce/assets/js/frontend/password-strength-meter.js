@@ -15,7 +15,7 @@
 					'keyup change',
 					'form.register #reg_password, form.checkout #account_password, ' +
 					'form.edit-account #password_1, form.lost_reset_password #password_1',
-					this.strengthMeter
+					/*this.strengthMeter*/
 				);
 			$( 'form.checkout #createaccount' ).trigger( 'change' );
 		},
@@ -58,7 +58,7 @@
 		 * @param {Object} wrapper
 		 * @param {Object} field
 		 */
-		includeMeter: function( wrapper, field ) {
+		/*includeMeter: function( wrapper, field ) {
 			var meter = wrapper.find( '.woocommerce-password-strength' );
 
 			if ( '' === field.val() ) {
@@ -71,7 +71,7 @@
 				meter.show();
 				$( document.body ).trigger( 'wc-password-strength-show' );
 			}
-		},
+		},*/
 
 		/**
 		 * Check password strength.
@@ -80,7 +80,7 @@
 		 *
 		 * @return {Int}
 		 */
-		checkPasswordStrength: function( wrapper, field ) {
+		/*checkPasswordStrength: function( wrapper, field ) {
 			var meter     = wrapper.find( '.woocommerce-password-strength' ),
 				hint      = wrapper.find( '.woocommerce-password-hint' ),
 				hint_html = '<small class="woocommerce-password-hint">' + wc_password_strength_meter_params.i18n_password_hint + '</small>',
@@ -125,7 +125,7 @@
 			}
 
 			return strength;
-		}
+		}*/
 	};
 
 	wc_password_strength_meter.init();
