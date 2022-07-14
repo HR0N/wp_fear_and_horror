@@ -235,6 +235,16 @@ li.woocommerce-MyAccount-navigation-link a:hover{
 .u-column1.col-1 label, .u-column2.col-2 label{
     position: relative;
 }
+@media screen and (max-width: 375px){
+    .u-column2.col-2 label{
+        font-size: 13px;
+    }
+}
+.woocommerce-LostPassword{
+    display: grid;
+    justify-content: space-between;
+    grid-template: 1fr / repeat(2, auto);
+}
 .u-column1.col-1 .required, .u-column2.col-2 .required{
     position: absolute;
     right: 0;

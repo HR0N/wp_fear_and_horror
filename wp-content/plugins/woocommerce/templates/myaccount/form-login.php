@@ -55,6 +55,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Забыли пароль?', 'woocommerce' ); ?></a>
+				<a href="#registration"><?php esc_html_e( 'Нет аккаунта?', 'woocommerce' ); ?></a>
 			</p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -65,7 +66,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 	</div>
 
-	<div class="u-column2 col-2">
+	<div class="u-column2 col-2" id="registration">
 
 		<h2><?php esc_html_e( 'Регистрация', 'woocommerce' ); ?></h2>
 
