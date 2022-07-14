@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea4bb48a-c3f1-4622-8510-a458ba314e54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/form-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/form-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,9 @@
       <workItem from="1657542044421" duration="908000" />
       <workItem from="1657707613145" duration="7234000" />
       <workItem from="1657792925008" duration="119000" />
-      <workItem from="1657793066307" duration="15180000" />
+      <workItem from="1657793066307" duration="15336000" />
+      <workItem from="1657818510050" duration="1614000" />
+      <workItem from="1657824844972" duration="625000" />
     </task>
     <servers />
   </component>
@@ -125,10 +126,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1656601454291" />
-    <state x="462" y="10" width="805" height="804" key="find.popup" timestamp="1657812478825">
+    <state x="462" y="10" width="805" height="804" key="find.popup" timestamp="1657819358441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="10" width="805" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1657812478825" />
+    <state x="462" y="10" width="805" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1657819358441" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1656600539884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

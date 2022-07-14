@@ -499,4 +499,9 @@ add_action( "woocommerce_register_form_start", "woocom_extra_register_fields" );
  */
 // Go to Settings > Permalinks and just push "Save Changes" button.
 
-// todo:                                                       . . : : global functions : : . .
+// todo:
+add_filter('woocommerce_login_redirect', 'login_redirect');
+
+function login_redirect($redirect_to) {
+    return home_url().'/my-account/my_account/';
+}
