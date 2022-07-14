@@ -2,15 +2,225 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea4bb48a-c3f1-4622-8510-a458ba314e54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/change_login_page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/register_validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/alpha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/blacklist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/contains.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/equals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/escape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isAfter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isAlpha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isAlphanumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isAscii.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBIC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBase32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBase58.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBase64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBefore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBoolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isBtcAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isByteLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isCreditCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isCurrency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isDataURI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isDecimal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isDivisibleBy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isEAN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isEthereumAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isFQDN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isFloat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isFullWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isHSL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isHalfWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isHash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isHexColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isHexadecimal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIBAN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIMEI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIPRange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISBN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISIN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISO31661Alpha2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISO31661Alpha3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISO4217.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISO8601.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISRC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isISSN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIdentityCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isInt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isJWT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isLatLong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isLicensePlate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isLocale.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isLowercase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMACAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMD5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMagnetURI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMimeType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMobilePhone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMongoId.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isMultibyte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isNumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isOctal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isPassportNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isPort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isPostalCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isRFC3339.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isRgbColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isSemVer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isSlug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isStrongPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isSurrogatePair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isTaxID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isUUID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isUppercase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isVAT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isVariableWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/isWhitelisted.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/ltrim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/matches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/normalizeEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/rtrim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/stripLow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/toBoolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/toDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/toFloat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/toInt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/trim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/unescape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/algorithms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/assertString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/includes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/multilineRegex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/util/typeOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/es/lib/whitelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/alpha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/blacklist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/contains.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/equals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/escape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isAfter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isAlpha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isAlphanumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isAscii.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBIC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBase32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBase58.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBase64.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBefore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBoolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isBtcAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isByteLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isCreditCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isCurrency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isDataURI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isDecimal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isDivisibleBy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isEAN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isEmpty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isEthereumAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isFQDN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isFloat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isFullWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isHSL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isHalfWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isHash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isHexColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isHexadecimal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIBAN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIMEI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIPRange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISBN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISIN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISO31661Alpha2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISO31661Alpha3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISO4217.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISO8601.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISRC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isISSN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIdentityCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isInt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isJWT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isLatLong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isLicensePlate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isLocale.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isLowercase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMACAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMD5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMagnetURI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMimeType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMobilePhone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMongoId.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isMultibyte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isNumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isOctal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isPassportNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isPort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isPostalCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isRFC3339.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isRgbColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isSemVer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isSlug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isStrongPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isSurrogatePair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isTaxID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isUUID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isUppercase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isVAT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isVariableWidth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/isWhitelisted.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/ltrim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/matches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/normalizeEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/rtrim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/stripLow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/toBoolean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/toDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/toFloat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/toInt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/trim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/unescape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/algorithms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/assertString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/includes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/multilineRegex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/util/typeOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/lib/whitelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/libs/validator/validator.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/css/woocommerce.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/legacy/css/woocommerce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/legacy/css/woocommerce.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/legacy/js/frontend/password-strength-meter.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/legacy/js/frontend/password-strength-meter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/global/form-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/global/form-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/form-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/form-login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/css/main_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/change_login_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/assets/js/change_login_page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/underscores/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +307,9 @@
       <workItem from="1657466876959" duration="2779000" />
       <workItem from="1657474434493" duration="1773000" />
       <workItem from="1657542044421" duration="908000" />
-      <workItem from="1657707613145" duration="6450000" />
+      <workItem from="1657707613145" duration="7234000" />
+      <workItem from="1657792925008" duration="119000" />
+      <workItem from="1657793066307" duration="14089000" />
     </task>
     <servers />
   </component>
@@ -130,10 +342,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1656601454291" />
-    <state x="462" y="10" width="805" height="804" key="find.popup" timestamp="1657715904732">
+    <state x="462" y="10" width="805" height="804" key="find.popup" timestamp="1657810920838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="10" width="805" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1657715904732" />
+    <state x="462" y="10" width="805" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1657810920838" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1656600539884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -32,7 +32,6 @@
                         'margin': '100px auto',
                     });
                     this.woocommerce_password_strength.removeClass('woocommerce-password-strength');
-                    console.log(this.u_columns);
                 }
             }
 

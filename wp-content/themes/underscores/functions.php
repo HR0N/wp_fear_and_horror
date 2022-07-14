@@ -70,6 +70,12 @@ function init_jquery_scripts(){
 function init_login_page_scripts(){
     wp_enqueue_script('login_page', get_template_directory_uri()."/assets/js/change_login_page.js");
 }
+function init_register_validation_scripts(){
+    wp_enqueue_script('register_validation', get_template_directory_uri()."/assets/js/register_validation.js");
+}
+function init_validator(){
+    wp_enqueue_script('validator', get_template_directory_uri()."/assets/libs/validator/validator.js");
+}
 
 add_action("wp_enqueue_scripts", 'init_fonts_style');
 add_action("wp_enqueue_scripts", 'init_menu_styles');
@@ -101,6 +107,8 @@ add_action("wp_footer", 'init_top_up_scripts');
 add_action("wp_footer", 'init_withdraw_scripts');
 add_action("wp_footer", 'init_jquery_scripts');
 add_action("wp_footer", 'init_login_page_scripts');
+add_action("wp_footer", 'init_register_validation_scripts');
+add_action("wp_footer", 'init_validator');
 
 
 
@@ -471,9 +479,9 @@ function misha_my_account_endpoint_content13() {
 // todo:                                                       . . : : extra fields : : . .
 function woocom_extra_register_fields() {?>
     <p class="form-row form-row-wide">
-        <label for="reg_billing_first_name"><?php _e( "billing_phone", "woocommerce" ); ?>
+        <label for="reg_billing_first_name"><?php _e( "Телефон", "woocommerce" ); ?>
             <span class="required">*</span></label>
-        <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone"
+        <input placeholder="Телефон" type="text" class="input-text" name="billing_phone" id="reg_billing_phone"
                value="<?php if ( ! empty( $_POST["billing_phone"] ) ) esc_attr_e( $_POST["billing_phone"] ); ?>"/></p>
     <?php
 }

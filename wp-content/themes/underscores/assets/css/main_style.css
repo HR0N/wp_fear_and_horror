@@ -224,3 +224,34 @@ li.woocommerce-MyAccount-navigation-link a:hover{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.u-column1.col-1 .logo{
+    margin-bottom: 25px;
+    display: grid;
+    justify-content: center;
+}
+.u-column1.col-1 h2, .u-column2.col-2 h2{
+    text-align: center;
+}
+.u-column1.col-1 label, .u-column2.col-2 label{
+    position: relative;
+}
+.u-column1.col-1 .required, .u-column2.col-2 .required{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.woocommerce-button{
+    padding: 0.618em 2em !important;
+    background-color: rgb(0,91,128) !important;
+    color: white !important;
+    border-radius: 2rem !important;
+}
+.woocommerce-button:hover{
+    background-color: rgb(0, 70, 105) !important;
+}
+.validation_error{
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    color: #940000;
+}
