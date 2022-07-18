@@ -30,10 +30,14 @@
                     .html(`${contract.deposit_diapason[0]} - ${contract.deposit_diapason[1]} $`);
                 let income_diapason = this.find('.income_diapason')
                     .html(`${contract.income}% / день`);
-                this.cur_contracts.map((v, k)=>{
+                if($(e.target).attr('contractid')){
+                    this.find('.interface2__bill_amount span').html(this.cur_contract_ar[3]);
+                    this.find('.interface2__bill_income span').html(this.cur_contract_ar[4]);
+                }
+                /*this.cur_contracts.map((v, k)=>{
                     this.find('.interface2__bill_amount span').html(v[3]);
                     this.find('.interface2__bill_income span').html(v[4]);
-                });
+                });*/
             }
             deposit_contract(e){
                 $(e.target)[0].disabled = true;

@@ -87,6 +87,7 @@
     display: none;
 }
 .offers-wrapper .modal .modal__main{
+    color: black;
     position: relative;
     width: 90%;
     min-width: 300px;
